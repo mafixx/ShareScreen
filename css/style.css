@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0093E9;
+  background-image: linear-gradient(150deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%);
+  background-size: 200% 200%;
+  animation: gradient 2s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.box {
+  position: relative;
+  width: 320px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+h3 {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container button {
+  margin: 5px;
+}
